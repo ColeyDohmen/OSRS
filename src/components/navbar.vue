@@ -2,11 +2,11 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <img
+        <!-- <img
           alt="logo"
           src="../assets/img/cw-logo.png"
           height="45"
-        />
+        /> -->
       </div>
     </router-link>
     <button
@@ -34,14 +34,14 @@
         </li>
       </ul>
       <span class="navbar-text">
-        <button
+      <!-- <button
           class="btn btn-outline-primary text-uppercase"
           @click="login"
           v-if="!user.isAuthenticated"
         >
           Login
-        </button>
-
+        </button> -->
+      <!--
         <div class="dropdown" v-else>
           <div
             class="dropdown-toggle"
@@ -59,20 +59,23 @@
             class="dropdown-menu p-0 list-group w-100"
             :class="{ show: state.dropOpen }"
             @click="state.dropOpen = false"
-          >
-            <router-link :to="{ name: 'Account' }">
-              <div class="list-group-item list-group-item-action hoverable">
-                Account
-              </div>
-            </router-link>
-            <div
-              class="list-group-item list-group-item-action hoverable"
-              @click="logout"
-            >
-              logout
-            </div>
+          > -->
+      <!-- <router-link :to="{ name: 'Account' }">
+          <div class="list-group-item list-group-item-action hoverable">
+            Account
           </div>
+        </router-link>
+        <div
+          class="list-group-item list-group-item-action hoverable"
+          @click="logout"
+        >
+          logout
         </div>
+      </span>
+    </div>
+    </div>
+    </span>
+    </div> -->
       </span>
     </div>
   </nav>
