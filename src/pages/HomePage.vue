@@ -5,11 +5,19 @@
       <span class="mx-2 text-white">OSRS</span>
     </h1>
   </div>
+  <div id="app">
+    {{ info }}
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  setup() {
+    return {
+      account: computed(() => AppState.account)
+    }
+  }
 }
 </script>
 
